@@ -15,7 +15,7 @@ class Tab4Screen extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('WinMind • Rank'),
+        title: const Text('Win • Rank'),
       ),
       body: SingleChildScrollView(
         padding: const EdgeInsets.all(20.0),
