@@ -10,7 +10,7 @@ class Tab1Screen extends StatefulWidget {
 
 class _Tab1ScreenState extends State<Tab1Screen> {
   int _selectedOption = -1;
-  final _options = ['Эхо', 'Облако', 'Тень', 'Зеркало'];
+  final _options = ['Echo', 'Cloud', 'Shadow', 'Mirror'];
 
   @override
   Widget build(BuildContext context) {
@@ -36,10 +36,10 @@ class _Tab1ScreenState extends State<Tab1Screen> {
                   Container(
                     padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
                     decoration: BoxDecoration(color: AppTheme.primaryColor.withValues(alpha: 0.2), borderRadius: BorderRadius.circular(8)),
-                    child: const Text('ЗАГАДКА ДНЯ • IQ 130+', style: TextStyle(color: AppTheme.primaryColor, fontWeight: FontWeight.bold, fontSize: 11)),
+                    child: const Text('RIDDLE OF THE DAY • IQ 130+', style: TextStyle(color: AppTheme.primaryColor, fontWeight: FontWeight.bold, fontSize: 11)),
                   ),
                   const SizedBox(height: 12),
-                  const Text('«Я говорю без рта и слышу без ушей. У меня нет тела, но я оживаю от ветра. Что я?»', style: TextStyle(color: Colors.white, fontSize: 16, fontWeight: FontWeight.bold, height: 1.4)),
+                  const Text('"I speak without a mouth and hear without ears. I have no body, but I come alive with wind. What am I?"', style: TextStyle(color: Colors.white, fontSize: 16, fontWeight: FontWeight.bold, height: 1.4)),
                   const SizedBox(height: 16),
                   ...List.generate(_options.length, (i) {
                     final sel = _selectedOption == i;
@@ -68,11 +68,11 @@ class _Tab1ScreenState extends State<Tab1Screen> {
               ),
             ),
             const SizedBox(height: 20),
-            const Text('Категории головоломок', style: TextStyle(color: Colors.white, fontSize: 16, fontWeight: FontWeight.bold)),
+            const Text('Puzzle Categories', style: TextStyle(color: Colors.white, fontSize: 16, fontWeight: FontWeight.bold)),
             const SizedBox(height: 12),
-            _buildCat('Логические сетки', 'Дедуктивные задачи Эйнштейна', '18 ур.', Icons.grid_view),
-            _buildCat('Числовые последовательности', 'Поиск скрытых формул ряда', '24 ур.', Icons.pin),
-            _buildCat('Пространственные фигуры', 'Развертки 3D кубов', '12 ур.', Icons.view_in_ar),
+            _buildCat('Logic Matrices', 'Einstein deduction logic grids', '18 lvls', Icons.grid_view),
+            _buildCat('Numerical Sequences', 'Pattern formulas & missing items', '24 lvls', Icons.pin),
+            _buildCat('Spatial Geometry', '3D Cube Net Transformations', '12 lvls', Icons.view_in_ar),
           ],
         ),
       ),

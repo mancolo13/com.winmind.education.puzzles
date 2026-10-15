@@ -7,9 +7,9 @@ class Tab2Screen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final quests = [
-      {'title': 'Решить 3 числовые матрицы', 'reward': '+50 XP', 'done': true},
-      {'title': 'Точность 90%+ в скоростном тесте', 'reward': '+80 XP', 'done': true},
-      {'title': 'Пройти блиц за 90 секунд', 'reward': '+100 XP', 'done': false},
+      {'title': 'Solve 3 number matrices', 'reward': '+50 XP', 'done': true},
+      {'title': '90%+ Accuracy in speed quiz', 'reward': '+80 XP', 'done': true},
+      {'title': 'Finish blitz in under 90s', 'reward': '+100 XP', 'done': false},
     ];
 
     return Scaffold(
@@ -34,17 +34,17 @@ class Tab2Screen extends StatelessWidget {
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text('Ежедневный стрик ума', style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 16)),
+                      Text('Daily Mind Streak', style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 16)),
                       SizedBox(height: 4),
-                      Text('Вы решаете задачи каждый день', style: TextStyle(color: Colors.white60, fontSize: 12)),
+                      Text('You solve daily challenges consistently', style: TextStyle(color: Colors.white60, fontSize: 12)),
                     ],
                   ),
-                  Text('🔥 12 Дней', style: TextStyle(color: Colors.orange, fontWeight: FontWeight.bold, fontSize: 16)),
+                  Text('🔥 12 Days', style: TextStyle(color: Colors.orange, fontWeight: FontWeight.bold, fontSize: 16)),
                 ],
               ),
             ),
             const SizedBox(height: 20),
-            const Text('Задания на сегодня', style: TextStyle(color: Colors.white, fontSize: 16, fontWeight: FontWeight.bold)),
+            const Text("Today's Quests", style: TextStyle(color: Colors.white, fontSize: 16, fontWeight: FontWeight.bold)),
             const SizedBox(height: 12),
             ...quests.map((q) => Container(
               margin: const EdgeInsets.only(bottom: 10),

@@ -7,10 +7,10 @@ class Tab4Screen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final ranks = [
-      {'pos': '1', 'name': 'Максим К.', 'score': '3,420 pts', 'trophy': '🏆'},
-      {'pos': '2', 'name': 'Елена В.', 'score': '3,180 pts', 'trophy': '🥈'},
-      {'pos': '3', 'name': 'Даниил С.', 'score': '2,950 pts', 'trophy': '🥉'},
-      {'pos': '184', 'name': 'Вы (Игрок)', 'score': '1,840 pts', 'trophy': '⭐'},
+      {'pos': '1', 'name': 'Max K.', 'score': '3,420 pts', 'trophy': '🏆'},
+      {'pos': '2', 'name': 'Elena V.', 'score': '3,180 pts', 'trophy': '🥈'},
+      {'pos': '3', 'name': 'Daniel S.', 'score': '2,950 pts', 'trophy': '🥉'},
+      {'pos': '184', 'name': 'You (Player)', 'score': '1,840 pts', 'trophy': '⭐'},
     ];
 
     return Scaffold(
@@ -29,7 +29,7 @@ class Tab4Screen extends StatelessWidget {
                 borderRadius: BorderRadius.circular(18),
                 border: Border.all(color: AppTheme.primaryColor.withValues(alpha: 0.3)),
               ),
-              child: const Text('Глобальная лига эрудитов', style: TextStyle(color: AppTheme.primaryColor, fontWeight: FontWeight.bold, fontSize: 16)),
+              child: const Text('Global Erudite Leaderboard', style: TextStyle(color: AppTheme.primaryColor, fontWeight: FontWeight.bold, fontSize: 16)),
             ),
             const SizedBox(height: 16),
             ...ranks.map((r) => Container(
